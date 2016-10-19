@@ -22,7 +22,7 @@
           xsi:noNamespaceSchemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0">
 
     <repository>mvn:org.apache.karaf.features/standard/${karaf.version}/xml/features</repository>
-    <repository>mvn:org.apache.jclouds.karaf/jclouds-karaf/${jclouds.version}/xml/features</repository>
+    <repository>mvn:org.apache.jclouds.karaf/jclouds-karaf/${jclouds-karaf.version}/xml/features</repository>
     <repository>mvn:org.apache.cxf.karaf/apache-cxf/${cxf.version}/xml/features</repository>
 
     <feature name="swagger" version="${swagger.version}" description="Swagger Annotations+Core+JAXRS+Models">
@@ -258,11 +258,11 @@
         <bundle dependency="true">mvn:org.apache.jclouds.driver/jclouds-okhttp/${jclouds.version}</bundle>
 
         <bundle dependency="true">mvn:org.apache.jclouds.driver/jclouds-sshj/${jclouds.version}</bundle>
-        <bundle dependency="true">mvn:org.apache.jclouds.labs/abiquo/${jclouds.version}</bundle>
-        <bundle dependency="true">mvn:org.apache.jclouds.labs/docker/${jclouds.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.jclouds.labs/abiquo/${jclouds.labs.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.jclouds.labs/docker/${jclouds.labs.version}</bundle>
 
         <!-- Not bundle-ized, fixed in 2.0.0-SNAPSHOT -->
-        <!-- bundle dependency="true">mvn:org.apache.jclouds.labs/google-compute-engine/${jclouds.version}</bundle -->
+        <!-- bundle dependency="true">mvn:org.apache.jclouds.labs/google-compute-engine/${jclouds.labs.version}</bundle -->
 
         <feature>jclouds-services</feature>
 
