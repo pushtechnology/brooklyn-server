@@ -91,7 +91,7 @@
         <surefire.failIfNoSpecifiedTests>false</surefire.failIfNoSpecifiedTests>
 
         <!-- Dependency Versions -->
-        <jclouds.version>1.9.2-REAPPT-1.4.2-SNAPSHOT</jclouds.version> <!-- JCLOUDS_VERSION -->
+        <jclouds.version>1.9.2-REAPPT-1.4.2</jclouds.version> <!-- JCLOUDS_VERSION -->
         <jclouds.labs.version>1.9.2</jclouds.labs.version>
         <jclouds-karaf.version>1.9.2</jclouds-karaf.version>
         <logback.version>1.0.7</logback.version>
