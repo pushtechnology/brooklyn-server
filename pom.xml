@@ -30,7 +30,7 @@
 
     <groupId>org.apache.brooklyn</groupId>
     <artifactId>brooklyn-server</artifactId>
-    <version>0.10.0-REAPPT-1.4.3-SNAPSHOT</version>  <!-- BROOKLYN_VERSION -->
+    <version>0.10.0-REAPPT-1.4.3</version>  <!-- BROOKLYN_VERSION -->
     <packaging>pom</packaging>
 
     <name>Brooklyn Server Root</name>
@@ -73,7 +73,7 @@
     </mailingLists>
 
     <properties>
-        <brooklyn.version>0.10.0-REAPPT-1.4.3-SNAPSHOT</brooklyn.version>  <!-- BROOKLYN_VERSION -->
+        <brooklyn.version>0.10.0-REAPPT-1.4.3</brooklyn.version>  <!-- BROOKLYN_VERSION -->
 
         <org.osgi.core.version>6.0.0</org.osgi.core.version>
 
@@ -91,7 +91,7 @@
         <surefire.failIfNoSpecifiedTests>false</surefire.failIfNoSpecifiedTests>
 
         <!-- Dependency Versions -->
-        <jclouds.version>1.9.2-REAPPT-1.4.3-SNAPSHOT</jclouds.version> <!-- JCLOUDS_VERSION -->
+        <jclouds.version>1.9.2-REAPPT-1.4.3</jclouds.version> <!-- JCLOUDS_VERSION -->
         <jclouds.labs.version>1.9.2</jclouds.labs.version>
         <jclouds-karaf.version>1.9.2</jclouds-karaf.version>
         <logback.version>1.0.7</logback.version>
