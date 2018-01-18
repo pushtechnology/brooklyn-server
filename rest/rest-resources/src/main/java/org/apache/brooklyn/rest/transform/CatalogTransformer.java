@@ -25,9 +25,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import javax.ws.rs.core.Application;
 import javax.ws.rs.core.UriBuilder;
 
+import org.apache.brooklyn.api.entity.Application;
 import org.apache.brooklyn.api.catalog.CatalogItem;
 import org.apache.brooklyn.api.catalog.CatalogItem.CatalogItemType;
 import org.apache.brooklyn.api.effector.Effector;
