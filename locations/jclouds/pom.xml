@@ -138,12 +138,40 @@
         <dependency>
             <groupId>${jclouds.groupId}.labs</groupId>
             <artifactId>azurecompute</artifactId>
-            <version>${jclouds.labs.version}</version>
+            <version>${jclouds.base.version}</version>
+            <exclusions>
+                    <!-- Workaround for dependency convergence error due to jclouds fork, and no jclouds labs fork -->
+                    <!-- This will no longer be needed once brooklyn takes on a jclouds release supporting r4 instance types -->
+                <exclusion>
+                    <groupId>org.apache.jclouds</groupId>
+                    <artifactId>jclouds-compute</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>${jclouds.groupId}.labs</groupId>
             <artifactId>azurecompute-arm</artifactId>
-            <version>${jclouds.labs.version}</version>
+            <version>${jclouds.base.version}</version>
+            <exclusions>
+                    <!-- Workaround for dependency convergence error due to jclouds fork, and no jclouds labs fork -->
+                    <!-- This will no longer be needed once brooklyn takes on a jclouds release supporting r4 instance types -->
+                <exclusion>
+                    <groupId>org.apache.jclouds.api</groupId>
+                    <artifactId>oauth</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.jclouds</groupId>
+                    <artifactId>jclouds-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.jclouds.driver</groupId>
+                    <artifactId>jclouds-okhttp</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.jclouds</groupId>
+                    <artifactId>jclouds-compute</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- these two seem needed here to prevent Eclipse IDE from getting wrong version of logback-core -->

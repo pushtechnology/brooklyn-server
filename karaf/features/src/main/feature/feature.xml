@@ -22,7 +22,7 @@
           xsi:noNamespaceSchemaLocation="http://karaf.apache.org/xmlns/features/v1.4.0">
 
     <repository>mvn:org.apache.karaf.features/standard/${karaf.version}/xml/features</repository>
-    <repository>mvn:org.apache.jclouds.karaf/jclouds-karaf/${jclouds.version}/xml/features</repository>
+    <repository>mvn:org.apache.jclouds.karaf/jclouds-karaf/${jclouds.base.version}/xml/features</repository>
     <repository>mvn:org.apache.cxf.karaf/apache-cxf/${cxf.version}/xml/features</repository>
     <repository>mvn:io.fabric8.kubernetes/kubernetes-karaf/${kubernetes-client.version}/xml/features</repository>
 
@@ -308,9 +308,9 @@
         <feature>brooklyn-locations-jclouds-labs</feature>
     </feature>
 
-    <feature name="brooklyn-locations-jclouds-labs" version="${project.version}" description="Brooklyn JClouds Labs Location Targets">
-        <bundle>mvn:org.apache.jclouds.labs/azurecompute/${jclouds.version}</bundle>
-        <bundle>mvn:org.apache.jclouds.labs/azurecompute-arm/${jclouds.version}</bundle>
+    <feature name="brooklyn-locations-jclouds-labs" version="${project.base.version}" description="Brooklyn JClouds Labs Location Targets">
+        <bundle>mvn:org.apache.jclouds.labs/azurecompute/${jclouds.base.version}</bundle>
+        <bundle>mvn:org.apache.jclouds.labs/azurecompute-arm/${jclouds.base.version}</bundle>
         <bundle>mvn:org.apache.jclouds.api/oauth/${jclouds.version}</bundle>
         <bundle>mvn:org.apache.jclouds.common/googlecloud/${jclouds.version}</bundle>
         <bundle>mvn:org.apache.jclouds.provider/google-compute-engine/${jclouds.version}</bundle>
