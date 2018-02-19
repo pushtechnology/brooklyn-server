@@ -262,13 +262,13 @@
         -->
         <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.okhttp/${okhttp.bundle.version}</bundle>
         <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.okio/${okio.bundle.version}</bundle>
-        <bundle dependency="true">mvn:org.apache.jclouds.driver/jclouds-okhttp/${jclouds.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.jclouds.driver/jclouds-okhttp/${jclouds.base.version}</bundle>
 
-        <bundle dependency="true">mvn:org.apache.jclouds.driver/jclouds-sshj/${jclouds.version}</bundle>
-        <!--<bundle dependency="true">mvn:org.apache.jclouds.labs/abiquo/${jclouds.version}</bundle>--> <!-- jclouds abstraction not implemented -->
-        <bundle dependency="true">mvn:org.apache.jclouds.api/docker/${jclouds.version}</bundle>
+        <bundle dependency="true">mvn:org.apache.jclouds.driver/jclouds-sshj/${jclouds.base.version}</bundle>
+        <!--<bundle dependency="true">mvn:org.apache.jclouds.labs/abiquo/${jclouds.base.version}</bundle>--> <!-- jclouds abstraction not implemented -->
+        <bundle dependency="true">mvn:org.apache.jclouds.api/docker/${jclouds.base.version}</bundle>
 
-        <bundle>mvn:org.apache.jclouds/jclouds-loadbalancer/${jclouds.version}</bundle>
+        <bundle>mvn:org.apache.jclouds/jclouds-loadbalancer/${jclouds.base.version}</bundle>
         <feature>jclouds-services</feature>
         <bundle dependency="true">wrap:mvn:com.jcraft/jsch.agentproxy.sshj/0.0.9$Bundle-Name=wrap%20%3A%3A%20jsch.agentproxy.sshj</bundle>
 
@@ -308,12 +308,12 @@
         <feature>brooklyn-locations-jclouds-labs</feature>
     </feature>
 
-    <feature name="brooklyn-locations-jclouds-labs" version="${project.base.version}" description="Brooklyn JClouds Labs Location Targets">
+    <feature name="brooklyn-locations-jclouds-labs" version="${project.version}" description="Brooklyn JClouds Labs Location Targets">
         <bundle>mvn:org.apache.jclouds.labs/azurecompute/${jclouds.base.version}</bundle>
         <bundle>mvn:org.apache.jclouds.labs/azurecompute-arm/${jclouds.base.version}</bundle>
-        <bundle>mvn:org.apache.jclouds.api/oauth/${jclouds.version}</bundle>
-        <bundle>mvn:org.apache.jclouds.common/googlecloud/${jclouds.version}</bundle>
-        <bundle>mvn:org.apache.jclouds.provider/google-compute-engine/${jclouds.version}</bundle>
+        <bundle>mvn:org.apache.jclouds.api/oauth/${jclouds.base.version}</bundle>
+        <bundle>mvn:org.apache.jclouds.common/googlecloud/${jclouds.base.version}</bundle>
+        <bundle>mvn:org.apache.jclouds.provider/google-compute-engine/${jclouds.base.version}</bundle>
     </feature>
 
     <feature name="brooklyn-container-service" version="${project.version}" description="Brooklyn Container Service and Location Targets">
