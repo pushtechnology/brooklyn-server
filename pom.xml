@@ -30,7 +30,7 @@
 
     <groupId>org.apache.brooklyn</groupId>
     <artifactId>brooklyn-server</artifactId>
-    <version>0.12.0-REAPPT-1.4.4</version>  <!-- BROOKLYN_VERSION -->
+    <version>0.12.0-REAPPT-1.4.5-SNAPSHOT</version>  <!-- BROOKLYN_VERSION -->
     <packaging>pom</packaging>
 
     <name>Brooklyn Server Root</name>
@@ -83,7 +83,7 @@
     </repositories>
 
     <properties>
-        <brooklyn.version>0.12.0-REAPPT-1.4.4</brooklyn.version>  <!-- BROOKLYN_VERSION -->
+        <brooklyn.version>0.12.0-REAPPT-1.4.5-SNAPSHOT</brooklyn.version>  <!-- BROOKLYN_VERSION -->
 
         <org.osgi.core.version>6.0.0</org.osgi.core.version>
 
@@ -101,7 +101,7 @@
         <surefire.failIfNoSpecifiedTests>false</surefire.failIfNoSpecifiedTests>
 
         <!-- Dependency Versions -->
-        <jclouds.version>2.0.2-REAPPT-1.4.4</jclouds.version> <!-- JCLOUDS_VERSION -->
+        <jclouds.version>2.0.2-REAPPT-1.4.5-SNAPSHOT</jclouds.version> <!-- JCLOUDS_VERSION -->
         <jclouds.base.version>2.0.2</jclouds.base.version> <!-- We may need to take the base version of some jclouds components, like labs and karaf -->
         <logback.version>1.0.7</logback.version>
         <slf4j.version>1.6.6</slf4j.version>  <!-- used for java.util.logging jul-to-slf4j interception -->
